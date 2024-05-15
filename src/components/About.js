@@ -16,7 +16,7 @@ export default function About() {
                     />
                 </div>
                 <span id="about text" className="text-amber-800 text-justify text-[0.9vw] m-2 w-[50%]">
-                    Essa página surgiu com a ideia de disponibilizar um menu de café para todos que nos visitarem em nossa casinha. Tudo começou por que nós somos apaixonados em café(apesar da Katlyn ainda tomar café com açudar...) e o Vitor gosta demais de fazer café de todos os tipos e com isso adquiriu diversas máquinas e formas de se fazer café com o tempo e então com isso surgiu a ideia... Por que não deixar nossas visitas entretidas com essa paixão que temos e fazermos um "Home Coffee Shop" para nossas amadas visitas, e assim surgiu este café.
+                    Essa página surgiu com a ideia de disponibilizar um menu de café para todos que nos visitarem em nossa casinha. Tudo começou por que nós somos apaixonados em café(apesar da Katlyn ainda tomar café com açucar...) e o Vitor gosta demais de fazer café de todos os tipos e com isso adquiriu diversas máquinas e formas de se fazer café com o tempo e então com isso surgiu a ideia... Por que não deixar nossas visitas entretidas com essa paixão que temos e fazermos um "Home Coffee Shop" para nossas amadas visitas, e assim surgiu este café.
                 </span>
             </div>
         </div>
