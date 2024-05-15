@@ -17,14 +17,27 @@
 }
 
 body {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
+
+.body::-webkit-scrollbar {
+  display: none;
+}
+
+.main::-webkit-scrollbar {
+  display: none;
+}
+
+.html::-webkit-scrollbar {
+  display: none;
+}
+
 
 @layer utilities {
   .text-balance {

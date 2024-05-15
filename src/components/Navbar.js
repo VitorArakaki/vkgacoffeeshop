@@ -35,12 +35,12 @@ export default function Navbar() {
     const user = null
 
     return (
-        <div className="flex flex-row relative h-[5vh] w-[100vw] justify-between items-center border-b-[1px] border-solid border-amber-950 bg-amber-950/60">
+        <div className="flex flex-row relative h-[5vh] w-[100%] justify-between items-center border-b-[1px] border-solid border-amber-950 bg-amber-950/60 overflow-x-hidden">
             <Image
                 id="Logo"
                 width={0}
                 height={0}
-                src="/assets/logo.svg"
+                src="/assets/navbar/logo.svg"
                 className="pl-[1vw] w-[4vw] max-h-[4vh]"
             />
             {isMobile ? (
@@ -58,7 +58,7 @@ export default function Navbar() {
                             <Link href={user !== null ? `/profile/${user.name}` : "/signin"}>
                                 <img
                                     id="avatar"
-                                    src={imageUrl !== null ? imageUrl : "/assets/avatar.svg"}
+                                    src={imageUrl !== null ? imageUrl : "/assets/navbar/avatar.svg"}
                                     className="border-2 rounded-xl w-[2vw] h-[2vw]"
                                     alt="User Avatar"
                                 />
@@ -77,7 +77,7 @@ export default function Navbar() {
                         <Link href={user !== null ? `/profile/${user.name}` : "/signin"} >
                             <Image
                                 id="avatar"
-                                src={imageUrl !== null ? imageUrl : "/assets/avatar.svg"}
+                                src={imageUrl !== null ? imageUrl : "/assets/navbar/avatar.svg"}
                                 width={0}
                                 height={0}
                                 className="border-2 rounded-xl w-[2vw] h-[2vw]"

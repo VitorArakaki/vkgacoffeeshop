@@ -1,11 +1,10 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Banner() {
     return (
-        <div className="bg-[url('/assets/coffee.png')] mt-[2vw] h-[50vh] border-b-[1px] border-solid border-amber-950">
+        <div className="bg-[url('/assets/home/coffee.png')] mt-[2vw] h-[50vh] border-b-[1px] border-solid border-amber-950">
             <div className="isolate px-6 pt-14 lg:px-8">
-                <div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+                <div className="absolute inset-x-0 -z-10 transform-gpu blur-3xl" aria-hidden="true">
                 </div>
                 <div className="mx-auto w-[100vw]">
                     <div className="hidden sm:mb-8 sm:flex sm:justify-center">
