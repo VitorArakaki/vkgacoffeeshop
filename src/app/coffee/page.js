@@ -1,5 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
+import Link from "next/link";
+import Footer from "@/components/Footer";
 
 export default function Coffee() {
     const products = [
@@ -22,18 +24,24 @@ export default function Coffee() {
             <Navbar />
             <div id="coffee catalog" className="w-[100vw] h-[100vh] flex flex-row space-x-4 mt-[2vw] justify-center">
                 {products.map((item, index) => (
-                    <div key={index} id="product box" className="w-[14vw] h-[16vw] border-amber-950/50 rounded-md border-[2px] flex flex-col justify-start items-center">
-                        <Image
-                            src="/assets/navbar/logo.svg"
-                            width={0}
-                            height={0}
-                            className="w-[100%] h-[50%] border-b-2 border-amber-950/60 mb-2" />
-                        <span key={index} className="text-amber-900 text-[1.1vw] font-semibold">{item.name}</span>
-                        <span key={index} className="text-amber-900 text-[0.9vw] font-normal">Tipo: {item.type}</span>
-                        <span key={index} className="text-amber-900 text-[0.8vw] font-normal">{item.description}</span>
-                    </div>
+                    <Link href="/">
+                        <div key={index} id="product box" className="w-[16vw] h-[20vw] border-amber-950/50 rounded-md border-[2px] flex flex-col justify-start items-center p-2 cursor-pointer">
+                            <Image
+                                src="/assets/navbar/logo.svg"
+                                width={0}
+                                height={0}
+                                className="w-[100%] h-[50%] border-b-2 border-amber-950/60 mb-2 w-max[10px]" />
+                            <div key={index + "-text"} id="product texts" className="h-[50%] overflow-y-scroll flex flex-col items-center justify-start">
+                                <span key={index} className="text-amber-900 text-[1.1vw] font-semibold">{item.name}</span><div className="h-[5%]" />
+                                <span key={index} className="text-amber-900 text-[0.9vw] font-normal">Tipo: {item.type}</span><div className="h-[5%]" />
+                                <span key={index} className="text-amber-900 text-[0.8vw] font-normal text-justify">{item.description}</span>
+                            </div>
+                        </div>
+                    </Link>
                 ))}
             </div>
+
+            <Footer />
         </div>
     );
 }
